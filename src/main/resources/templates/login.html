@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login.css" type="text/css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Login</title>
+    <header th:insert="/bloks/header :: header"></header>
+</head>
+<body class="text-center">
+
+<main class="form-signin w-20 m-auto">
+
+        <!------ Include the above in your HEAD tag ---------->
+
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
+
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAD6ElEQVRoge3azWucVRTH8U8bW10oalIbrUGrC93oyqoLcVFdlAQ1Ko1RFEql0JaC4kt1JboTC/ovKPiyEUEE14pQ21TcKghWalXQJtakKtZJMi5OSid3nkn7zHOfTMD5wiWLJL9zzvM8955z77n06dOnT5+1y7qa9a/F3UvjTgxjcGkM4C+cwg/4FkfxGX6r2a+sXIk9+AKLaJYciyLwA+LBrFkGcQh/Kx9kp3EGb+K6VYzjglyCgzgtX6BFgb+ADVWdrTqHb8T7uKfD75uYwpdLP7/B7+LhzONybMGtuAPbcZeY30V8jUl8X9HvrnhA57d6Aq9gaxe6W8QXc6KD9h94sKLvpXkC/xY4M43ncVkGGxvE4vdrgZ0Gns5g46LYLT7H1ImPMVSDvavxboG9RasQ9P3i6aZP+0DdhsXbTr+qhphatbBVFAmtBs/ikboMFrADf2qf0zfnNjSAY4mheTU+3RXYof1NfyXSYzb2aZ9DL+Y0UJI9Bf48l0t8E2YS8Q/VX4dfiPcs92lO1O6VeSkRnrU2Sr1Bsclo9e1QDuFX5fl0JkSe/hkP53AMey337YxIY5UYFqVhA29jfRca6yxf4RuiRKzKRvxoedD7M+ii+iqYVky5gn450T2SQTMLjyouWqoGfT0WWjQXcU1FzWxMqifoo4nmYxX1slJH0K8nem9V9DE7O7UHPY+nKui1an2awcfs5HzTtyU633Xj0Jg4TcxxRFNmNJTP05sSjVPlw+WnVQ60dfxS0tdLk///p9MfrlRENEsazUlPbI/iuN580uMlfc3ySddNzkXr9kSnq0WrTiYUp6Unu9Rb02npf1V41FVaTiWaExX1sjCunmBHLN88LIhFrDJVt4cn5Q+W9u3h4aqCw2KP2cA7ujsAIIqJ3MEWHQDsqyr6WiLY7RHP+JJzx5XPs51IT1PnZDjiOZiIzoqGV68Z0t4YeCOHcNEx7Ud6f0z7gfYXsTmXeHo62BSLRa8o8ufZnAbWa89183gop5GLZFR7q2VK5lYL0e0vaqbtzG1oBUa1N9NO46a6DG5XXAM/o/45vVdxu3SsZrt2KW6IfyJThZMwpH2Baorj2F012CtkUvGVhxnRVcxx5WGjyLPpNDr3Zlct2HOMiRs5RZv4k6In1c3cGhEZIK2gWuds159x1Xl3g2hb3tvh903RSD/i/LWlGfGgFsS1pRHcIq4t3YdtOpevx/C4OFzsGQPi0lhanOQcsyLPZk89VbhKbMTTtFFlzIlyMVsFVQdXiKtNn+v+culhsWBV3gik1J07Nzt/fXibuDkwKFLNgGhgT4sdVOv14ema/erTp0+fPmuS/wD+wXQMWePBIgAAAABJRU5ErkJggg==">
+                </div>
+
+                <!-- Login Form -->
+                <form method="post" action="/login">
+                    <input type="text" id="email" class="fadeIn second" name="email" placeholder="login">
+                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#">Sign-up?</a>
+                </div>
+
+            </div>
+        </div>
+</main>
+</body>
+</html>

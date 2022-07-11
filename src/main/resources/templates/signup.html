@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/login.css" type="text/css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Sign-up</title>
+  <header th:insert="/bloks/header :: header"></header>
+
+</head>
+<body class="text-center">
+
+<main class="form-signin w-20 m-auto">
+
+  <!------ Include the above in your HEAD tag ---------->
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAEkklEQVR4nO2bXYhWRRjHf/uhgi0Juitmma4iCrIQaRopm4bSVUmyiggRWEQS4hfSRXTVRYF01V1XdRG2fixIlIgXUYqCJbF+e2FFC5lmaprtrl/bxXPOdt5n5qznzMw575v7/mDA2XnnP88zc858PGeEOnXq1KlTp85opaFg/aeBlUAnMAWYFv29D7gIfAfsA34s2I5SaQC6gHPAUMZ0FlhF8QNSOO3AEbI7rtNhYHrpVgdiMXAJd+fjdAVYWrLt3nQCg5jODAA7gbXAHOCRKM2J/vbFCPWWlOqBB+3AH5hOdAMzMtbfZal/KWP9qtKA+c7fBTY5aG2O6uo5oaZZjTlyLs7HbLXorfK0sTAaMJe67gC6u5XmmQCahTCfSkMHgZkBdGcgk2BS+6kAulYaPeq+rPI9wE8eejG/ILvDJCsD6Frx6YBOlddG+6C1dFvB8OmAx1X+Bx9DFMcf0FZNcJPK97QloHaL0r4ZULsCnyegOZgVJtquprIaysN1lZ/qY4jiMZW/FlC7Ap8OOK/y830MUSxQ+XMBtSvw6YBjKh9yqdJL7PcBtYOxGHMjNCuAbjvmRujZALrBaUQiOUlDdwXQ3aM0T1PDkaLXMA8vmz30tln0XvW0sVAasR+HtzhobcU8Dh/Cb54qhdnIMqVHbjfZDkczMR/7IeBPwswppbAC6Md0YhA5Iq8D5iI7vJbo3+uiMltI7B/ghVI9CMBy7E9C3nQVWFay7cFYAtzG3fl+4JnSrQ5AK7ADuIX/E/AX8D4wwdOmZuANJK74d5QOA68T+BzzEnAZf8d1+hWZW1yYhHx2S9P+FpjoqD1ME/AxcD+lkUHgAPA2sBBoA8YAY4HJwCJgI3CQ9NfmPvAh+TZCrUBvip7uBOdT5ljM4KU2vCuH3lrSO3II+Dxq80FkdT5O63PYOEwz8GUG8QFkhEfq5SYkjG5bCnXqZuQnIc35r4Ano3RQlR3K4fcwOyyN9AHvAPcsZSeQXV4H8GiUOpBt7ynL728D24HfLWUf5HS+B3ntYqar8ht5ne/CfFRP818A462UTsia7gJrIq12zMOWbYud1XmQkLtzB0zA/Pr7M2Yk6BXcNkTXMGMK05CLFCGcH4O8Ds6vwEeq8gBm5CZmKvAZcMdinO2R/5T0kNoi7J/b2sjnfI/lt5knwScwJ6p3M9bbBuxH5on+KPUBXyNzg0vIO4Tz35BjGXxPVb4AjHMwPAQhnO9FNkuZaETe9aTABh8PPGhDVhXt0F7yOd+ap9EFSuAGMN7VAw9CjXwu50FCXEmREHG/vFRl5GP09ZU3XUQ8qNrIx+jGF7oKOVDVkY/pU4KTfcRykDbypToPEp9Lipax/NXEyFeLUe082CM5ac7vtfy2F+nE/yXjMc8Po2bkQaLKSYdOMkpGPkZflPxElT+0Ix+zk0rHNibKCnG+yHs+Luj4QgvSCR3Ac8A8VX4C+SJ1pXjTimciI0eGH9rHPuZFsjt/Bvk/SN7U0rf3tPBakntIHO95JGrsTS3NAbZD1kXk1uhx5LveUeT7YzBq6e7NMeA35EZYnAq7HxjzL1LP7MNHHQwEAAAAAElFTkSuQmCC">
+      </div>
+
+      <!-- Login Form -->
+      <form th:action="@{/process_register}" th:object="${user}" method="post">
+        <input type="text" th:field="*{email}" id="login" class="fadeIn second" name="login" placeholder="email">
+        <input type="text" th:field="*{password}" id="password" class="fadeIn third" name="login" placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Signup">
+      </form>
+
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Login?</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+</body>
+</html>
