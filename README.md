@@ -16,3 +16,5 @@ I can edit and delete only my own posts
 ## My profile page
 ![myprofile](https://user-images.githubusercontent.com/95150257/178477809-d3904d2e-bb25-43c4-b5a6-ab40aee636f7.jpg)
 
+## Email confirmation massage
+![emailconfirmation](https://user-images.githubusercontent.com/95150257/178479160-4549b2fa-e309-4c97-a87a-09bbfed8dae1.jpg)
